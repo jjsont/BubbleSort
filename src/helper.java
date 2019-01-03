@@ -8,8 +8,19 @@ public class helper {
 
 
     public static void printArray(int[] arr) {
-        for(int i=0; i<arr.length; i++) {
-            System.out.println(arr[i] + "");
+       String output= "";
+       for(int i=0; i<arr.length; i++) {
+           output= output + "[" + arr[i] + "] ";
+       }
+        System.out.println(output);
+    }
+
+    public static int[] randIntArr(int Count) {
+        int[] array = new int[Count];
+        for(int i=0; i<array.length; i++) {
+            array[i]= (int)(Math.random()* Count + 1);
         }
+        return array;
+
     }
 }

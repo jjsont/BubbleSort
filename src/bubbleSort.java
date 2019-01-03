@@ -1,6 +1,6 @@
 public class bubbleSort {
 
-    public static void bubbleSort(int[] arr) {
+    public static void bubble(int[] arr) {
     boolean swapped=false;
     while(swapped) {
         for(int i=0; i<arr.length -1; i++) {
