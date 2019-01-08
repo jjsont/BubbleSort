@@ -2,10 +2,24 @@ public class runner {
 
     public static void main(String[] args) {
 
-        int [] arr= helper.randIntArr(100);
-        helper.printArray(arr);
-        bubbleSort.bubble(arr);
-        helper.printArray(arr);
+      int [] randIntArr= helper.randIntArr(5);
+
+        System.out.println("Before: ");
+        for(int num:randIntArr) {
+            System.out.println(num + " ");
+        }
+        System.out.println();
+
+
+        bubbleSort.bubble(randIntArr);
+
+        System.out.println("After: ");
+        for(int num:randIntArr) {
+            System.out.println(num+ " ");
+        }
+
+        helper.printArray(randIntArr);
+
+        }
 
     }
-}
